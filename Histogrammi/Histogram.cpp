@@ -24,11 +24,11 @@ namespace Hist {
 	}
 
 	Histogram::Histogram(const Histogram& hist) : HistogramBase(hist) {
-		
+		this->eIntegers = hist.eIntegers;
 	}
 
 	Histogram::Histogram(Histogram&& hist) : HistogramBase(hist) {
-
+		this->eIntegers = hist.eIntegers;
 	}
 	
 	Histogram::~Histogram() {
